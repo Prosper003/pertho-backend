@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: pertho-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node server.js
+    plan: free
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
